@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <div class="main-nav">
+                        <nav>
+                            <div class="navigation">
+                                <a href="" class="navigation__logo"><span class="logo--blue">Web</span>Studio</a>
+                                <button type="button" class="navigation__menu-button mobile-button__open js-open-menu">
+                                    <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+                                        <use class="button-menu" href="./images/icons.svg#icon-menu-icon"></use>
+                                    </svg>
+                                </button>
+                                <div class="moble-menu is-open js-menu-container" id="menu-container">
+                                    <button type="button" class="navigation__menu-button mobile-button__closed js-close-menu"
+                                        mobile-button__open aria-controls="menu-container">
+                                        <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+                                            <use class="button_close" href="./images/icons.svg#icon-close-icon"></use>
+                                        </svg>
+                                    </button>
+                                    <ul class="mobile-menu__list">
+                                        <li class="mobile-menu__item"><a href="/index.html"
+                                                class="mobile-menu__link">Студия</a></li>
+                                        <li class="mobile-menu__item mobile-menu__link--current"><a href="/portfolio.html"
+                                                class="mobile-menu__link">Портфолио</a></li>
+                                        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+                                    </ul>
+                                    <div>
+                                        <ul class="mobile-menu__contacts">
+                                            <li><a href="tel:+380961111111" class="mobile-menu__tel">
+                                                    +38 096 111 11 11</a>
+                                            </li>
+                                            <li><a href="info@devstudio.com" class="mobile-menu__mail">
+                                                    </svg>
+                                                    info@devstudio.com</a></li>
+                                        </ul>
+                                        <ul class="mobile-menu__social">
+                                            <li class="mobile-menu__social-item"><a href=""
+                                                    class="mobile-menu__socia-link">Instagram</a></li>
+                                            <li class="mobile-menu__social-item"><a href=""
+                                                    class="mobile-menu__socia-link">Twitter</a>
+                                            </li>
+                                            <li class="mobile-menu__social-item"><a href=""
+                                                    class="mobile-menu__socia-link">Facebook</a>
+                                            </li>
+                                            <li class="mobile-menu__social-item"><a href=""
+                                                    class="mobile-menu__socia-link">Linkedin</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="navigation__site-nav">
+                                    <li class="navigation__item"><a href=""
+                                            class="navigation__link navigation__link--current">Студия</a></li>
+                                    <li class="navigation__item"><a href="portfolio.html" class="navigation__link">Портфолио</a>
+                                    </li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <ul class="site-link">
+                            <li class="site-link__item">
+                                <a href="info@devstudio.com" class="site-link__info">
+            
+                                    <svg class="site-link__icons" width=16px height=12px>
+                                        <use href="./images/icons.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com</a>
+                            </li>
+                            <li class="site-link__item"><a href="tel:+380961111111" class="site-link__info">
+                                    <svg class="site-link__icons" width=10px height=16px>
+                                        <use href="./images/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+<main>
+    <section class="product-section">
+        <div class="container">
+            <!-- Скрытый заголовок -->
+        <h1 class="visually-hidden">Продукт</h1>
+        <ul class="product-type">
+            <li class="product-type__item"><button type="button" class="product-type__button">Все</button></li>
+            <li class="product-type__item"><button type="button" class="product-type__button">Веб-сайты</button></li>
+            <li class="product-type__item"><button type="button" class="product-type__button">Приложения</button></li>
+            <li class="product-type__item"><button type="button" class="product-type__button">Дизайн</button></li>
+            <li class="product-type__item"><button type="button" class="product-type__button">Маркетинг</button></li>
+        </ul>
+        <ul class="products">
+            <li class="products__item">
+                <div class="products__overlay">
+                    <img src="./images/portfolio/laptop480.jpg" alt="Веб-сайт" srcset="./images/portfolio/laptop480.jpg 1x, ./images/portfolio/laptop4802x.jpg 2x" width=100%>
+                <div class="products__textdiv">
+                    <p class="products__text">
+                        Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                        шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                </div>
+                </div>
+                <div class="products__title-description">
+                <h2 class="products__title">Технокряк</h2>
+                <p class="products__description">Веб-сайт</p>
+                </div>
+            </li>
+            <li class="products__item">
+                <img src="./images/portfolio/nba480.jpg" alt="Веб-сайт"
+                srcset="./images/portfolio/nba480.jpg 1x, ./images/portfolio/nba4802x.jpg 2x" width=100%>
+                <div class="products__title-description">
+                <h2 class="products__title">Постер New Orlean vs Golden Star</h2>
+                <p class="products__description">Дизайн</p>
+                </div>
+            </li>
+            <li class="products__item">
+                <img src="./images/portfolio/seafood480.jpg" alt="Веб-сайт"
+                    srcset="./images/portfolio/seafood480.jpg 1x, ./images/portfolio/seafood4802x.jpg 2x" width=100%>
+                <div class="products__title-description">
+                <h2 class="products__title">Ресторан Seafood</h2>
+                <p class="products__description">Приложение</p>
+                </div>
+            </li>
+            <li class="products__item">
+                <img src="./images/portfolio/pods480.jpg" alt="Веб-сайт"
+                    srcset="./images/portfolio/pods480.jpg 1x, ./images/portfolio/pods4802x.jpg 2x" width=100%>
+                <div class="products__title-description">
+                <h2 class="products__title">Проект Prime</h2>
+                <p class="products__description">Маркетинг</p>
+                </div>
+            </li>
+            <li class="products__item">
+                <img src="./images/portfolio/box480.jpg" alt="Веб-сайт"
+                    srcset="./images/portfolio/box480.jpg 1x, ./images/portfolio/box4802x.jpg 2x" width=100%>
+                <div class="products__title-description">
+                <h2 class="products__title">Проект Boxes</h2>
+                <p class="products__description">Приложение</p>
+                </div>
+            </li>
+            <li class="products__item">
+                <img src="./images/portfolio/monitor480.jpg" alt="Веб-сайт"
+                    srcset="./images/portfolio/monitor480.jpg 1x, ./images/portfolio/monitor4802x.jpg 2x" width=100%>
+                <div class="products__title-description">
+                <h2 class="products__title">Inspiration has no Borders</h2>
+                <p class="products__description">Веб-сайт</p>
+                </div>
+            </li>
+            <li class="products__item">
+                <img src="./images/portfolio/book480.jpg" alt="Веб-сайт"
+                    srcset="./images/portfolio/book480.jpg 1x, ./images/portfolio/book4802x.jpg 2x" width=100%>
+                <div class="products__title-description">
+                <h2 class="products__title">Издание Limited Edition</h2>
+                <p class="products__description">Дизайн</p>
+                </div>
+            </li>
+            <li class="products__item">
+                <img src="./images/portfolio/price480.jpg" alt="Веб-сайт"
+                    srcset="./images/portfolio/price480.jpg 1x, ./images/portfolio/price4802x.jpg 2x" width=100%>
+                <div class="products__title-description">
+                <h2 class="products__title">Проект LAB</h2>
+                <p class="products__description">Маркетинг</p>
+                </div>
+            </li>
+            <li class="products__item">
+                <img src="./images/portfolio/work480.jpg" alt="Веб-сайт"
+                    srcset="./images/portfolio/work480.jpg 1x, ./images/portfolio/work4802x.jpg 2x" width=100%>
+                <div class="products__title-description">
+                <h2 class="products__title">Growing Business</h2>
+                <p class="products__description">Приложение</p>
+                </div>
+
+        </ul>
+        </div>
+
+    </section>
+</main>
+
+<!-- Footer  -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="address-box">
+            <div class="address-div">
+                <a href="" class="logo-footer"><span class="logo--blue">Web</span>Studio</a>
+                <address class="address">
+                    <span class="address__company">г. Киев, пр-т Леси Украинки, 26</span>
+                    <a href="info@example.com" class="address__link">info@example.com</a>
+                    <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                </address>
+            </div>
+            <div class="address-social">
+                <p class="address-social__tittle">Присоединяйтесь</p>
+                <ul class="address-social__list">
+                    <li class="address-social__item">
+                        <a href="" class="address-social__link">
+                            <svg class="address-social__icons">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="address-social__item">
+                        <a href="" class="address-social__link">
+                            <svg class="address-social__icons">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="address-social__item">
+                        <a href="" class="address-social__link">
+                            <svg class="address-social__icons">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="address-social__item">
+                        <a href="" class="address-social__link">
+                            <svg class="address-social__icons">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="email-form">
+            <p class="email-form__tittle">Подпишитесь на рассылку</p>
+            <label class="email__label">
+                <input type="email" name="email" class="email-form__link" placeholder="E-mail">
+                <button class="email-form__button" type="submit">Подписаться
+                    <svg class="email-form__icon" width=24px height=24px>
+                        <use href="./images/icons.svg#icon-icon-send-1"></use>
+                    </svg>
+                </button>
+            </label>
+        </form>
+    </div>
+
+</footer>
+
+<script src="./js/modal.js"></script>
+<script src="./js/menu-mobile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+.moble-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $white-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  z-index: 999;
+
+  justify-content: space-between;
+
+  @media screen and (min-width: 480px) {
+    padding: 48px 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.moble-menu.is-open {
+  transform: translateY(-160%);
+}
+
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  color: $title-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--current {
+    color: $accent-color;
+  }
+}
+
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__tel {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.18;
+  color: $accent-color;
+
+  letter-spacing: 0.02em;
+
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
+}
+
+.mobile-menu__mail {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: $description-color;
+}
+
+.mobile-menu__social {
+  display: flex;
+}
+
+.mobile-menu__social-item {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding: 0 2px;
+  @media screen and (min-width: 480px) {
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.mobile-menu__socia-link {
+  display: inline-flex;
+  text-decoration: none;
+  color: $accent-color;
+}
